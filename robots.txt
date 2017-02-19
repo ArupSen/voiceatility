@@ -1,0 +1,31 @@
+# for voiceatility.net
+# by Arup Sen http://arupdesigns.co.uk
+
+User-agent: *
+Disallow: /art/
+Disallow: /aspnet_client/
+Disallow: /banner.html
+Disallow: /buttons.html
+Disallow: /cgi-bin/
+Disallow: /composer.html
+Disallow: /contact.html
+Disallow: /corner.html
+Disallow: /flash/
+Disallow: /home.html
+Disallow: /index.html
+Disallow: /links.html
+Disallow: /navigation/
+Disallow: /new-site-draft/
+Disallow: /photographs/
+Disallow: /producer.html
+Disallow: /v3/
+Disallow: /v3.1/
+Disallow: /voiceatility.html
+Disallow: /voicefiles/
+Disallow: /js/
+Disallow: /css/
+Disallow: /data/
+Disallow: /includes/
+Disallow: /inc_path.php
+Disallow: /template.php
+

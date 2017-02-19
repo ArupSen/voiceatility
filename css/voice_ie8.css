@@ -1,0 +1,25 @@
+/*
+http://arupdesigns.co.uk
+arup@arupdesigns.co.uk
+
+additional style rules for IE8 Win
+can we make a concerted effort to get 
+people off this browser
+
+IE 8 is better and has almost full support for css 2.1
+and the X-UA meta tag thingy
+but still buggers up em units
+*/
+
+
+
+/*positioning main picture*/
+
+#index #dik_home{width:22.85em;left:32.1em;}
+#voiceovers #dik_home{width:26em;left:29em;}
+#audio_production #dik_home{width:20.9em;left:0;}
+#bespoke_music #dik_home{width:21.5em;left:33.5em;}
+#script_writing #dik_home{left:0;width:10.35em;}
+#about_richard #dik_home{width:25em;left:30em;}
+#contact #dik_home{left:0;width:23.55em;}
+

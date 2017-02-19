@@ -1,0 +1,88 @@
+/*
+http://arupdesigns.co.uk
+arup@arupdesigns.co.uk
+
+additional style rules for IE Win
+can we make a concerted effort to get 
+people off this browser
+*/
+
+/*global rules*/
+div#wrap div#contents{background-color:#C9C9C9;overflow:hidden;z-index:4;}
+#voiceovers div#contents{width:54.95em;}
+
+/*heading area*/
+div#wrap h1{margin:0.3em 0;}
+/*h2#subheading{width:11em;right:-0.1em;top:1.35em;word-spacing:1px;}*/
+h2#subheading span#prod{position:relative;left:6px;} /*to line up music and production*/
+h2#subheading{background-image:url('../images/voice_sub_head.gif');background-repeat:no-repeat;background-position:;height:50px;width:230px;top:12.5em;left:405em;color:#006276;font-size:0.1em;}
+
+/*content area*/
+div#contents{padding-top:0.5em;}
+#index div#contents{height:30.8em;}
+div#contents p {margin-bottom:0.1em;}
+
+/*positioning main picture*/
+img#dik_home{width:31em;left:24em;margin-bottom:-23.5em;}
+#index #dik_home{top:11.25em;width:24.85em;left:30.1em;}
+#voiceovers #dik_home{top:11.25em;width:26em;left:28.95em;}
+#audio_production #dik_home{top:11.25em;width:21.55em;left:0;}
+#bespoke_music #dik_home{top:11.25em;width:22.25em;left:32.8em;}
+#script_writing #dik_home{top:11.25em;left:0;width:10.8em;}
+#about_richard #dik_home{top:11.25em;width:25em;left:30em;}
+#contact #dik_home{top:11.25em;left:0;width:24.8em;}
+
+/*contents on the right on some pages*/
+#contact #contents p{width:20em;}
+
+/*navbar*/
+ul#navbar{width:55em;height:1.5em;padding-bottom:0em;margin-bottom:-0.1em;}
+ul#navbar li{width:6.8em;height:1.5em;}
+ul#navbar li a{width:3.9em;padding:0.8em 0.95em;height:1.5em;overflow:hidden;}
+ul#navbar li#voice a, ul#navbar li#samples a{width:4.4em;}
+ul#navbar li#audio a{width:4.8em;}
+ul#navbar li#audio {width:7.2em;}
+ul#navbar li#contact_us {width:6.9em;}/*contact tab wider*/
+ul#navbar li a:hover{color:#006276;}
+
+
+/*positioning navbar text using span class="tab"*/
+	ul#navbar li a span{position:relative;top:-5px;left:5px;cursor:hand;}
+	
+	/*navbar span bg images - link*/
+		#voice a span.tab{background-position:-880em -25.0em;height:40px;width:97px;}
+		#audio a span.tab{background-position:-1680em -28.0em;height:42px;width:102px;}
+		#music a span.tab{background-position:-2590em -16.0em;height:42px;width:80px;}
+		#script a span.tab{background-position:-3330em -28em;height:42px;width:90px;}
+		#samples a span.tab{background-position:-4260em -1.0px;height:42px;width:85px;}
+		#about a span.tab{background-position:-5100em -28.0em;height:42px;width:85px;}
+		#contact_us a span.tab{background-position:-5900em -13.0px;height:33px;width:100px;}
+
+/*active bg pics*/
+		#index #home a span.tab{background-position:-100em -65.0em;height:30px;width:80px;}
+		#voiceovers #voice a span.tab{background-position:-880em -18.0em;height:45px;width:97px;}
+		#audio_production #audio a span.tab{background-position:-1735em -13.0em;height:45px;width:101px;}
+		#bespoke_music #music a span.tab{background-position:-2590em -20.0em;height:45px;width:80px;}
+		#script_writing #script a span.tab{background-position:-3380em 1.0em;height:45px;width:80px;}
+		#samples_client_list #samples a span.tab{background-position:-4290em -1px;height:48px;width:85px;}
+		#about_richard #about a span.tab{background-position:-5080em -3.0px;height:48px;width:80px;}
+		#contact #contact_us a span.tab{background-position:-5900em -11.0px;height:48px;width:90px;}
+		
+/*navbar span bg images - hover*/
+#home a:hover span.tab, #voice a:hover span.tab, #audio a:hover span.tab, #music a:hover span.tab, #script a:hover span.tab, #samples a:hover span.tab, #about a:hover span.tab, #contact_us a:hover span.tab{background-image:url('../images/hover_sprite.gif');background-repeat:no-repeat;font-size:0.01em;color:#B0B0B0;display:block;}
+
+		#home a:hover span.tab{background-position:-80em -85.0em;height:30px;width:80px;}
+		#voice a:hover span.tab{background-position:-117px -3px;height:45px;width:97px;}
+		#audio a:hover span.tab{background-position:-1670em -30.0em;height:45px;width:101px;}
+		#music a:hover span.tab{background-position:-2620em -20.0em;height:45px;width:80px;}
+		#script a:hover span.tab{background-position:-3325em -30.0em;height:45px;width:80px;}
+		#samples a:hover span.tab{background-position:-4255em -1.0px;height:48px;width:80px;}
+		#about a:hover span.tab{background-position:-5100em -4.0px;height:48px;width:80px;}
+		#contact_us a:hover span.tab{background-position:-5895em -13.0px;height:48px;width:90px;}
+	
+/*samples page*/
+#samples_client_list #rightcol{margin-bottom:-23em;}
+#samples_client_list div#contents{height:30em;}
+#samples_client_list ul#rightcol{padding-top:1em;}
+#samples_client_list ul#navbar{padding-top:0em;}
+

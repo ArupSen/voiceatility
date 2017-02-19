@@ -1,0 +1,48 @@
+# redirect rules for voiceatility version 3.2
+
+Options +FollowSymLinks 
+# Options +MultiViews
+RewriteEngine On
+# 
+# RewriteCond %{HTTP_HOST} ^domain\.com/index.html
+# RewriteRule (.*) http://www.voiceatility.net/index.php$1 [R=301,L]
+# 
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME}\.php -f
+# RewriteRule ^(.*)$ $1.php
+
+# these conditions stop dikcadbury.com being redirected
+RewriteCond %{HTTP_HOST} !^dikcadbury\.com$ [NC]
+RewriteCond %{HTTP_HOST} !^www\.dikcadbury\.com$ [NC]
+RewriteCond %{HTTP_HOST} !=""
+
+RewriteRule ^index\.html$ /index.php [R=301,L]
+RewriteRule ^home\.html$ /index.php [R=301,L]
+RewriteRule ^banner\.html$ /index.php [R=301,L]
+RewriteRule ^buttons\.html$ /index.php [R=301,L]
+RewriteRule ^composer\.html$ /bespoke_music.php [R=301,L]
+RewriteRule ^producer\.html$ /audio_production.php [R=301,L]
+RewriteRule ^voiceatility\.html$ /voiceovers.php [R=301,L]
+RewriteRule ^contact\.html$ /contact.php [R=301,L]
+RewriteRule ^links\.html$ /samples_client_list.php [R=301,L]
+
+# better sort out the www.voiceatility.net too
+RewriteCond %{HTTP_HOST} !^voiceatility\.net$ [NC]
+RewriteRule ^(.*)$ http://voiceatility.net/$1 [R=301,L]
+
+# thought there should be a 404 handler as well
+ErrorDocument 404 /error404.php
+
+
+# these are the original redirects which is actually mod_alias
+# they caused all the links in dikcadbury.com to be redirected
+
+# redirect 301 /index.html http://voiceatility.net/index.php
+# redirect 301 /home.html http://voiceatility.net/index.php
+# redirect 301 /banner.html http://voiceatility.net/index.php
+# redirect 301 /buttons.html http://voiceatility.net/index.php
+# redirect 301 /composer.html http://voiceatility.net/bespoke_music.php
+# redirect 301 /producer.html http://voiceatility.net/audio_production.php
+# redirect 301 /voiceatility.html http://voiceatility.net/voiceovers.php
+# redirect 301 /contact.html http://voiceatility.net/contact.php
+# redirect 301 /links.html http://voiceatility.net/samples_client_list.php
